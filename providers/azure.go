@@ -44,8 +44,8 @@ func NewAzureProvider(p *ProviderData) *AzureProvider {
 }
 
 // Configure defaults the AzureProvider configuration options
-func (p *AzureProvider) Configure(tenant string, domainhint string) {
-	p.DomainHint = domainhint
+func (p *AzureProvider) Configure(tenant string, domainHint string) {
+	p.DomainHint = domainHint
 	p.Tenant = tenant
 	if tenant == "" {
 		p.Tenant = "common"
